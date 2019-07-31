@@ -1,0 +1,16 @@
+$(function(){
+	$('#dd_dashboard_filter').on('change',function(){
+		$.ajax({
+			url:$(this).val(),
+			success:function(data){
+				$('#lbl_user').html(data.total_user);
+				$('#lbl_member').html(data.total_member);
+				$('#lbl_deal').html(data.total_deal);
+				console.log(data);
+			},error:function(error){
+				alert('errors');
+			}
+		});
+	});	
+	$("#dd_dashboard_filter").trigger('change');
+});

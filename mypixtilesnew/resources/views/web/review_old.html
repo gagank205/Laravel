@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<!-- -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home - ClinicalTrials.gov</title>
+
+    <!-- Fonts Online -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'
+        type='text/css'>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+    <!-- Style Sheet -->
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+
+
+
+</head>
+
+<body class="review-bg">
+    <section class="review-head">
+        <div class="bck-btn"><a href="./index.html"><i class="fa fa-angle-left"></i></a></div>
+            <div class="review-frm-txt">
+                <h6>Style Photos</h6>
+            </div>
+        <div class="form-menu">
+            <div class="dropdown ">
+                <img src="./images/menuIcon.svg" onclick="myFunction()" class="dropbtn">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Frequent Questions</a>
+                    <a href="#">Talk to Us</a>
+                    <a href="#">Add Promo Code</a>
+                    </ul>
+                </div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick = function (event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
+
+    </section>
+    <section>
+        <!-- <h6>PICK SOME PHOTOS!</h6> -->
+    </section>
+</body>
+
+</html>

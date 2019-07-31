@@ -1,0 +1,184 @@
+.fa, .fas {
+    font-weight: 900 !important;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
+.like-dislike{}
+.like-dislike ul{
+  text-align: center;
+  padding: 25px 0;
+}
+.panel {
+  margin-bottom: 4px !important;
+}
+
+.like-dislike .col-lg-6:first-child ul{background: #f1f1f1; border-radius: 5px;}
+.like-dislike .col-lg-6:last-child ul{background: #f1f1f1;  border-radius: 5px;}
+.like-dislike li.red i {
+    color: #b90000;
+}
+.like-dislike li i{     font-size: 70px;
+    color: #4fa700; }
+.like-dislike li em{
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+}
+.pull-right.back-btn {
+    padding: 13px;
+}
+
+a.btn-space{
+	margin-left: 10px;
+}
+div#m_table_1_filter{
+	float: right;
+}
+div#m_table_1_paginate {
+    float: right;
+}
+/*.error{
+	color:red !important;
+}*/
+.m-form__help{
+	color:red !important;
+}
+
+.elementToFadeInAndOut {    
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+    opacity: 0;
+}
+.custom_title{
+  color: #d6d7e1;
+  font-family: 'Poppins';
+  letter-spacing: 3px;
+  height: 26px;
+  font-size: 26px;
+  font-variant-caps: all-petite-caps;  
+}
+.m-brand .m-brand__logo .m-brand__logo-wrapper{
+  text-decoration: none;
+}
+.action_child{
+  display: inline-block;
+}
+
+label.m-checkbox.m-checkbox--solid.m-checkbox--state-brand.bold{
+  font-weight: bold;
+}
+.custom_image{
+  height: 37px;
+  margin-left: -12px;
+}
+.input-group.file-caption-main .input-group-addon, .input-group-btn {
+    width: auto;
+
+}
+#email-error {
+    font-weight: bold!important;
+    font-size:13px;
+}
+#password-error{
+  font-weight: bold!important;
+    font-size:13px;
+}
+.m--img-rounded.m--marginless, .m--img-rounded.m--marginless{
+  height: 41px!important;
+  width:41px!important;
+}
+.note-editable {
+    margin-top: 10px;
+}
+#m_datepicker_2:hover
+{
+  cursor:pointer !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #4a7c1c;
+  border-color: #4a7c1c;
+}
+/*#open_model {
+    margin-top: 18%;
+    margin-left: -12%;
+}*/
+#image_data {
+    border: 1px dotted;
+}
+.get_emoji_img{
+  font-size: 100px;
+}
+#label_block{
+  display: -webkit-box;
+}
+.file-drop-zone{
+  border: 0px !important;
+}
+.margin_top{
+  margin-top: 27px; 
+}
+
+a.btn.btn-focus.m-btn.m-btn--pill.m-btn--custom.m-btn--air.m-login__btn.m-login__btn--primary {
+  box-shadow: none !important;
+}
+body.m-page--fluid.m--skin-.m-content--skin-light2.m-header--fixed.m-header--fixed-mobile.m-aside-left--enabled.m-aside-left--skin-dark.m-aside-left--fixed.m-aside-left--offcanvas.m-footer--push.m-aside--offcanvas-default {
+    padding-right: 0 !important;
+}
+body.m-page--fluid.m--skin-.m-content--skin-light2.m-header--fixed.m-header--fixed-mobile.m-aside-left--enabled.m-aside-left--skin-dark.m-aside-left--fixed.m-aside-left--offcanvas.m-footer--push.m-aside--offcanvas-default.modal-open {
+    padding-right: 0 !important;
+}
+
+#m_login_signin_submit{
+    box-shadow: none !important;
+}
+#image_data\ modal_url{
+  border: 1px dotted;
+}
+
+a#bottom {
+    text-decoration: none;
+}
+button#m_login_forget_password_submit {
+    box-shadow: none !important;
+}
+
+#m_header_topbar .m--align-center {
+  background: url(../assets/app/media/img/misc/user_profile_bg.png); 
+  background-size: cover;
+}
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+button.kv-file-remove.btn.btn-kv.btn-default.btn-outline-secondary {
+  display: none;
+}
+button.kv-file-zoom.btn.btn-kv.btn-default.btn-outline-secondary {
+  display: none;
+}
+button.kv-file-upload.btn.btn-kv.btn-default.btn-outline-secondary{
+ display: none; 
+}
+/* 10-06-2019 */
+.m-login__logo a img {
+    width: auto;
+    height: 100px;
+}
+span.user_email {
+    color: #000;
+}
+select.goog-te-combo{
+      padding: 5px 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    outline: none;
+    position: relative;
+    top: -5px;
+}

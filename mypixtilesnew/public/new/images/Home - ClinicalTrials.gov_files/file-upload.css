@@ -1,0 +1,205 @@
+
+.SquareUploadButton {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    cursor: pointer;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    border: 4px dashed #b0b0b0;
+    width: 230px;
+    height: 230px;
+    border-radius: 14px;
+    -webkit-transition: background-color 0.3s, border-color 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    -o-transition: box-shadow 0.3s, background-color 0.3s, transform 0.3s, border-color 0.3s;
+    transition: box-shadow 0.3s, background-color 0.3s, transform 0.3s, border-color 0.3s;
+    transition: box-shadow 0.3s, background-color 0.3s, transform 0.3s, border-color 0.3s, -webkit-box-shadow 0.3s, -webkit-transform 0.3s;
+    -webkit-animation: fade-in 0.8s;
+            animation: fade-in 0.8s;
+  }
+  .SquareUploadButton:hover {
+    -webkit-box-shadow: 0 4px 16px #0000001f;
+            box-shadow: 0 4px 16px #0000001f;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .SquareUploadButton.animated {
+    -webkit-animation: fade-in 0.8s, shrink-grow 2s infinite ease-out, pink-highlight 2s infinite ease-out;
+            animation: fade-in 0.8s, shrink-grow 2s infinite ease-out, pink-highlight 2s infinite ease-out;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0 4px 16px #0000001f;
+            box-shadow: 0 4px 16px #0000001f;
+  }
+  .SquareUploadButton.animated .plus-shape {
+    -webkit-animation: pink-highlight 2s infinite ease-out;
+            animation: pink-highlight 2s infinite ease-out;
+  }
+  .SquareUploadButton .plus-icon {
+    width: 40px;
+    height: 40px;
+    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  .SquareUploadButton .plus-icon.show-buttons {
+    opacity: 0;
+  }
+  .SquareUploadButton.left-side {
+    -webkit-animation: invisible 0.6s, fade-in 0.8s 0.6s, left-slide-in 1.2s;
+            animation: invisible 0.6s, fade-in 0.8s 0.6s, left-slide-in 1.2s;
+    margin-right: 20px;
+    margin-top: -3px;
+    margin-left: 27px;
+  }
+  @media (min-width: 960px) {
+    .SquareUploadButton.left-side {
+      display: none;
+    }
+  }
+  .SquareUploadButton.right-side {
+    -webkit-animation: invisible 0.6s, fade-in 0.8s 0.6s, right-slide-in 1.2s;
+            animation: invisible 0.6s, fade-in 0.8s 0.6s, right-slide-in 1.2s;
+    margin-right: 5px;
+    margin-top: -3px;
+    margin-left: 8px;
+  }
+  @media (min-width: 960px) {
+    .SquareUploadButton.right-side {
+      margin-bottom: 18px;
+    }
+  }
+  .SquareUploadButton .split {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    height: 100%;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s, -webkit-filter 0.2s;
+    transition: opacity 0.2s, -webkit-transform 0.2s, -webkit-filter 0.2s;
+    -o-transition: opacity 0.2s, transform 0.2s, filter 0.2s;
+    transition: opacity 0.2s, transform 0.2s, filter 0.2s;
+    transition: opacity 0.2s, transform 0.2s, filter 0.2s, -webkit-transform 0.2s, -webkit-filter 0.2s;
+  }
+  .SquareUploadButton .split.show-buttons {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .SquareUploadButton .split .button {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background-color: rgba(255, 255, 255, 0.64);
+    font-weight: 600;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+  @media (min-width: 1025px) {
+    .SquareUploadButton .split .button:hover {
+      background-color: rgba(255, 0, 149, 0.08);
+    }
+  }
+  .SquareUploadButton .split .button .icon {
+    margin-bottom: 10px;
+  }
+  .SquareUploadButton .split .top {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  .SquareUploadButton .split .bottom {
+    border-top: 2px solid #dbdadb;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+  .SquareUploadButton .split .bottom .text {
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: -5px;
+  }
+  .SquareUploadButton .split .bottom .cloud-icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .SquareUploadButton .split .bottom .cloud-icons .cloud-icon {
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 13px;
+  }
+  .SquareUploadButton .split .bottom .cloud-icons .cloud-icon.smaller {
+    height: 18px;
+  }
+  @-webkit-keyframes shrink-grow {
+    0% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+  }
+  @keyframes shrink-grow {
+    0% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+    }
+  }
+  @-webkit-keyframes pink-highlight {
+    50% {
+      color: #ff037d;
+      border-color: #ff037d;
+      fill: #ff037d;
+    }
+  }
+  @keyframes pink-highlight {
+    50% {
+      color: #ff037d;
+      border-color: #ff037d;
+      fill: #ff037d;
+    }
+  }
+  
+  
+  
+  // WEBPACK FOOTER //
+  // ./src/components/TileUploader/SquareUploadButton/SquareUploadButton.css
